@@ -1,27 +1,36 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Univali - How
 
-// Decimal para binário
+//Acadï¿½micos: Daniel Augusto Linhares, Roges Ramos de Ramos, Kimberllin Rodrigues Martins, Fabricio Mello e Maria Eduarda Dutra Ramos
+
+//Curso de Graduaï¿½ï¿½o em Anï¿½lise e Desenvolvimento de Sistemas - Universidade do Vale do Itajaï¿½
+
+
+
+// Decimal para binï¿½rio
 
 void binario(int n) {
  if(n == 0)
-   printf ("%d", n); //se o ultimo resultado for 0, ele irá imprimir o número 0.
+   printf ("%d", n); //se o ultimo resultado for 0, ele irï¿½ imprimir o nï¿½mero 0.
    else {
     binario(n/2); //caso o 'n' for diferente de 0
-    printf("%d", n % 2);
+    printf("%d", n % 2); //imprimir o resto da divisï¿½o de n por 2
    }
-
 
 }
 
 int main(){
- int n;
+ int n; //variavel n
 
- printf ("Digite um valor decimal: ");
+ printf ("Digite um valor decimal: "); //Vamos imprimir a pergunta na tela
  scanf ("%d", &n);
 
  binario(n);
-
 }
+
+
+
+
 
